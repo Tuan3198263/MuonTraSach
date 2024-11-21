@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thư viện - Biên mục</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .sidebar {
+        background-color: #2c3e50;
+        color: white;
+        height: 100vh;
+        padding-top: 20px;
+      }
+      .sidebar a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+      }
+      .sidebar a:hover {
+        background-color: #34495e;
+      }
+      .sidebar .active {
+        background-color: #16a085;
+      }
+      .content {
+        padding: 20px;
+      }
+      .table th,
+      .table td {
+        vertical-align: middle;
+      }
+      .table th {
+        background-color: #f8f9fa;
+      }
+      .table .btn {
+        padding: 0;
+        border: none;
+        background: none;
+      }
+      .table .btn i {
+        color: #16a085;
+      }
+      .table .btn i:hover {
+        color: #138d75;
+      }
+      .pagination {
+        justify-content: flex-end;
+      }
+      .table .btn i {
+        margin-right: 8px; /* Tạo khoảng cách giữa các biểu tượng */
+      }
+
+      .table .btn i:hover {
+        color: #e74c3c; /* Màu đỏ cho biểu tượng thùng rác khi hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex">
+      <div class="sidebar">
+        <h4 class="text-center">Thư viện</h4>
+        <a href="#" class="active"><i class="fas fa-book"></i> Tổng quan</a>
+        <a href="#"><i class="fas fa-book"></i> Sách</a>
+        <a href="#"><i class="fas fa-newspaper"></i> Báo, tạp chí</a>
+        <a href="#"><i class="fas fa-exchange-alt"></i> Mượn trả</a>
+        <a href="#"><i class="fas fa-users"></i> Bạn đọc</a>
+        <a href="#"><i class="fas fa-cogs"></i> Hệ thống</a>
+        <a href="#"><i class="fas fa-chart-bar"></i> Báo cáo</a>
+        <a href="#"
+          ><i class="fas fa-database"></i> Dữ liệu tổng hợp MISA EMIS</a
+        >
+      </div>
+      <div class="content flex-grow-1">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h4>Biên mục</h4>
+          <div class="d-flex align-items-center">
+            <input
+              type="text"
+              class="form-control me-2"
+              placeholder="Search..."
+            />
+            <select class="form-select me-2">
+              <option selected>Tất cả</option>
+              <!-- Add other options as needed -->
+            </select>
+            <button class="btn btn-success me-2">Thêm</button>
+          </div>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Nhan đề</th>
+              <th scope="col">Tác giả</th>
+              <th scope="col">Giá bìa</th>
+              <th scope="col">Nhà xuất bản</th>
+              <th scope="col">Số quyển</th>
+              <th scope="col">Hành động</th>
+            </tr>
+            <tr>
+              <th>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tìm kiếm..."
+                />
+              </th>
+              <th>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tìm kiếm..."
+                />
+              </th>
+              <th>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tìm kiếm..."
+                />
+              </th>
+              <th>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tìm kiếm..."
+                />
+              </th>
+              <th>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tìm kiếm..."
+                />
+              </th>
+              <th></th>
+              <!-- Cột Hành động không có ô tìm kiếm -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Âm nhạc cổ truyền dân tộc người Việt</td>
+              <td>BÙI NGỌC PHÁC</td>
+              <td>0</td>
+              <td>Mỹ thuật</td>
+              <td>5</td>
+              <td>
+                <button class="btn"><i class="fas fa-edit"></i></button>
+                <button class="btn"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Bác Hồ viết di chúc và di chúc của Bác Hồ</td>
+              <td>PHẠM QUỐC TUẤN</td>
+              <td>38.000</td>
+              <td>Kim Đồng</td>
+              <td>3</td>
+              <td>
+                <button class="btn"><i class="fas fa-edit"></i></button>
+                <button class="btn"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Bài tập Lịch sử 11</td>
+              <td>ĐOÀN CÔNG LẬP</td>
+              <td>25.000</td>
+              <td>Đà Nẵng</td>
+              <td>10</td>
+              <td>
+                <button class="btn"><i class="fas fa-edit"></i></button>
+                <button class="btn"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Bộ luật giao thông đường bộ</td>
+              <td>VÕ KIM THANH</td>
+              <td>45.000</td>
+              <td>Lao động</td>
+              <td>7</td>
+              <td>
+                <button class="btn"><i class="fas fa-edit"></i></button>
+                <button class="btn"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex justify-content-between align-items-center">
+          <span>Tổng số 3.960 biên mục</span>
+          <nav>
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&lt;</span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&gt;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
